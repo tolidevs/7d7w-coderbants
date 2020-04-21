@@ -3,32 +3,45 @@ font-family: 'Special Elite', cursive;
 font-family: 'Orbitron', sans-serif;
 font-family: 'PT Mono', monospace; */
 
+div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* flex-wrap: wrap; */
+}
+
 .App {
   text-align: center;
   color: white;
-  display: flex;
+  /* display: flex;
   align-items: center;
-  justify-content: center;
-
+  justify-content: center; */
+  width:100%;
 }
+
+
 
 .jokebox{
   width: 60vw;
   margin-right: 10vw;
   margin-left: 10vw;
-  display: flex;
+  /* display: flex;
   align-items: flex-start;
-  justify-content: center;
+  justify-content: center; */
   flex-wrap: wrap;
   background-image: url('./iMac.png');
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  /* background-attachment: fixed; */
   background-position: center;
-  position: relative;
 }
 
+
+
 .joke {
+    /* display: flex;
+    justify-content: center;
+    align-items: flex-start; */
     height: 40vh;
     width: fit-content;
     padding-top: 10%;
@@ -36,7 +49,8 @@ font-family: 'PT Mono', monospace; */
     padding-right: 20%;
     padding-left: 20%;
     font-size: medium;
-}
+    margin: auto;
+  }
 
 .joketext {
   background-color: rgba(3,218,207,0.5)
@@ -77,3 +91,25 @@ button:active {
   transform: translateY(4px);
 }
 
+@media only screen and (max-width: 600px) {
+  body {
+    height: auto;
+    flex-wrap: wrap;
+  }
+  
+  #mainheader {
+    font-size: 3em;
+  }
+
+  #subheader {
+    font-size: 1.5em;
+  }
+ 
+
+  .jokebox{
+    background-image: none;
+    width: 100%;
+    max-height: 60vh;
+    height: fit-content
+  }
+}
