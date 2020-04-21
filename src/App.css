@@ -1,38 +1,79 @@
+/* font-family: 'Rajdhani', sans-serif;
+font-family: 'Special Elite', cursive;
+font-family: 'Orbitron', sans-serif;
+font-family: 'PT Mono', monospace; */
+
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  color: white;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+
+}
+
+.jokebox{
+  width: 60vw;
+  margin-right: 10vw;
+  margin-left: 10vw;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-image: url('./iMac.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  /* background-attachment: fixed; */
+  background-position: center;
+  position: relative;
+}
+
+.joke {
+    height: 40vh;
+    width: fit-content;
+    padding-top: 10%;
+    padding-bottom: 20%;
+    padding-right: 20%;
+    padding-left: 20%;
+    font-size: medium;
+}
+
+.joketext {
+  background-color: rgba(3,218,207,0.5)
+}
+
+#mainheader {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 5em;
+  margin-block-start: 0.4em;
+  margin-block-end: 0.4em;
+}
+
+#subheader {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2em;
+  color: #BB86FC
+}
+
+button {
+  font-family: 'Orbitron', sans-serif;
+  padding: 5px 10px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
   color: white;
+  background-color: #CF6679;
+  border: none;
+  border-radius: 5px;
+
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {background-color: #03DAC5)}
+
+button:active {
+  background-color: rgb(218, 216, 216);
+  /* box-shadow: 0 5px rgb(218, 216, 216); */
+  transform: translateY(4px);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
